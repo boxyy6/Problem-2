@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Problem 2</title>
+  <script>
+    function calculateLitres() {
+      var time = parseFloat(document.getElementById("time").value);
+      var litres = Math.floor(time * 0.5);
+      document.getElementById("result").innerHTML = "Nathan will drink " + litres + " litres.";
+    }
+  </script>
+</head>
+<body>
+  <h1>Water Drinked</h1>
+  <label for="time">Enter the time in hours:</label>
+  <input type="text" id="time">
+  <button onclick="calculateLitres()">Calculate</button>
+  <p id="result"></p>
+</body>
+</html>
